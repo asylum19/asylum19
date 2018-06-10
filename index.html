@@ -114,11 +114,25 @@ body {
 
 .gallery-item {
   margin: 20px;
+    position: relative;
 }
 
 
 .gallery-item .thumbnail {
   border: 5px solid #fff;
+    width:300px;
+    height:200px;
+    border:5;
+}
+
+.centered {
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:1px 1px 1px #000000;
+    color: lavenderblush;
 }
 
 
@@ -156,9 +170,10 @@ body {
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Research
+  <a href="https://asylum19.github.io/">Home</a>
+  <a href="https://asylum19.github.io/blogmain.html">Blog</a>
+    <div class="dropdown">
+    <button class="dropbtn">Science
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -167,8 +182,8 @@ body {
       <a href="#">Link 3</a>
     </div>
   </div>
-  <a href="#">People</a>
-  <a href="#">Contact</a>
+    <a href="#">Pics</a>
+  <a href="#">About</a>
 </div>
 
 <!-- Text + background -->
@@ -189,19 +204,27 @@ body {
 
 </body>
 
-    <div class="gallery">
+<div class="gallery">
       <figure class="gallery-item">
-        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss1.jpg">
+        <a href="https://asylum19.github.io/blogmain.html">
+          <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss1.jpg">
+            <div class="centered"> Blog </div></a>
       </figure>
       <figure class="gallery-item">
+          <a href="http://pusheen.com/">
         <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss2.jpg">
+          <div class="centered"> Science </div></a>
       </figure>
       <figure class="gallery-item">
+           <a href="http://pusheen.com/">
         <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss3.jpg">
+               <div class="centered"> Pics </div></a>
       </figure>
       <figure class="gallery-item">
+           <a href="http://pusheen.com/">
         <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss4.jpg">
-      </figure>
+        <div class="centered"> About </div></a>
+    </figure>
     </div>
 
     <nav>
