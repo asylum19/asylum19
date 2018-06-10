@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<!font reference>
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+<style>
+
+/* background image */
+body {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+}
+
+.hero {
+	padding: 180px;
+	margin: 20px;
+  background-image:
+ url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg");
+  background-size: cover;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+/* text over main picture */
+.hero h2 {
+  font-size: 56px;
+  margin: 0;
+  color: #fff;
+    padding-bottom: 4px
+}
+
+.hero h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Hello Font */
+.row2 h4 {
+	font-size: 7vw;
+    font-family: 'Lato' 'Palatino Linotype', sans-serif;
+  color: color: #dabece;
+    border-width: 0px;
+    padding-left: 40%;
+    margin: 2%;
+}
+
+/* My Name Font */
+.row2 h3 {
+	font-size: 3vw;
+    font-family: 'Lato' 'Palatino Linotype', sans-serif;
+  color: #333;
+    border-width: 0px;
+    margin: 3%;
+    line-height: 1em;
+
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* styling columns*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+}
+
+/* left column */
+.left {
+    font-size: 8vw;
+    width: 25%;
+    height: 70%;
+    color: #333;
+    padding-left: 20px;
+    font-family:'Kalam';
+    justify-content: center;
+}
+
+/* right column */
+.right {
+    width: 75%;
+    height:  100%;
+    font-family:'Kalam';
+    font-size: 3vw;
+    color: #dabece;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+
+.gallery-item {
+  margin: 20px;
+}
+
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .row, .navbar, .dropdown {
+        flex-direction: column;
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the submenu the whole width of page */
+
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+</style>
+
+<head>
+	<title>HELLO WORLD</title>
+</head>
+
+<link rel="stylesheet"
+  type="text/css"
+  href="main.css"/>
+
+<body class="container">
+    <h1 class="col-sm-6">BE BOLD &#8226; BE PATIENT</h1>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Research
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+  <a href="#">People</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Text + background -->
+  <section class="hero">
+        <h2>180 Days</h2>
+      <h3> Turn Around & Get To OVC</h3>
+    </section>
+
+
+<div class="row2">
+  <div class="column left">
+    <h4>Hello!</h4>
+  </div>
+  <div class="column right">
+    <h3>I'm Melissa Jane and I want to be a vet <br> this is how I'm going to do it</h3>
+  </div>
+</div>
+
+</body>
+
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss1.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss2.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss3.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss4.jpg">
+      </figure>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Ginger</a></li>
+        <li><a href="#">Cat</a></li>
+        <li><a href="#">Society</a></li>
+      </ul>
+    </nav>
+
+</body>
+
+
+</html>
+
+
+
+
+
