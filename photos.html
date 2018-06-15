@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+
+<!font reference>
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+<style>
+
+/* background image */
+body {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+}
+
+/* text over main picture */
+.hero h2 {
+  font-size: 10vw;
+  margin: 0;
+  color: #fff;
+    padding-bottom: 4px
+}
+
+.hero h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 3vw;
+}
+
+/* Hello Font */
+h4 {
+	font-size: 7vw;
+    font-family: 'Lato' 'Palatino Linotype', sans-serif;
+  color: #333;
+    border-width: 0px;
+    padding-left: 15%;
+    margin: 15%;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* styling columns*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+}
+
+/* left column */
+.left {
+    font-size: 8vw;
+    width: 25%;
+    height: 70%;
+    color: #333;
+    padding-left: 20px;
+    font-family:'Kalam';
+    justify-content: center;
+}
+
+/* right column */
+.right {
+    width: 75%;
+    height:  100%;
+    font-family:'Kalam';
+    font-size: 3vw;
+    color: #dabece;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.gallery-item {
+  margin: 20px;
+    position: relative;
+}
+
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+    width:300px;
+    height:200px;
+    border:5;
+}
+
+.centered {
+    font-size: 32px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:1px 1px 1px #000000;
+    color: lavenderblush;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .row, .navbar, .dropdown {
+        flex-direction: column;
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the submenu the whole width of page */
+
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+</style>
+
+<head>
+	<title>HELLO WORLD</title>
+</head>
+
+<link rel="stylesheet"
+  type="text/css"
+  href="main.css"/>
+
+<body class="container">
+    <h1 class="col-sm-6">BE BOLD &#8226; BE PATIENT</h1>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="https://asylum19.github.io/">Home</a>
+  <a href="https://asylum19.github.io/blogmain.html">Blog</a>
+    <div class="dropdown">
+    <button class="dropbtn">Science
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+    <a href="#">Pics</a>
+  <a href="#">About</a>
+</div>
+
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

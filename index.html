@@ -3,6 +3,7 @@
 
 <!font reference>
 <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+<link rel="stylesheet" href="main.css">
 
 <style>
 
@@ -39,7 +40,6 @@ body {
     color: #dabece;
 	font-size: 7vw;
     font-family: 'Lato' 'Palatino Linotype', sans-serif;
-  color: color: #dabece;
     border-width: 0px;
     padding-left: 40%;
     margin: 2%;
@@ -153,12 +153,12 @@ body {
 
 /* Responsive layout - when the screen is less than 600px wide, make the submenu the whole width of page */
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .dropdown-content {
+    min-width: 400px;
     display: none;
     position: relative;
     background-color: #f9f9f9;
-    min-width: 600px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
 }
@@ -181,13 +181,11 @@ body {
   <a href="https://asylum19.github.io/">Home</a>
   <a href="https://asylum19.github.io/blogmain.html">Blog</a>
     <div class="dropdown">
-    <button class="dropbtn">Science
-      <i class="fa fa-caret-down"></i>
-    </button>
+    <button class="dropbtn">Science</button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="http://pusheen.com/">Link 1</a>
+      <a href="http://pusheen.com/">Link 2</a>
+      <a href="http://pusheen.com/">Link 3</a>
     </div>
   </div>
     <a href="#">Pics</a>
