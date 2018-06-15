@@ -11,126 +11,60 @@ body {
     background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
 }
 
-/* text over main picture */
-.hero h2 {
-  font-size: 10vw;
-  margin: 0;
-  color: #fff;
-    padding-bottom: 4px
-}
 
-.hero h3 {
-    margin: 0;
-    color: #fff;
-    font-size: 3vw;
-}
-
-/* Hello Font */
-h4 {
-	font-size: 7vw;
-    font-family: 'Lato' 'Palatino Linotype', sans-serif;
-  color: #333;
-    border-width: 0px;
-    padding-left: 15%;
-    margin: 15%;
-}
-
-/* Column container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-/* styling columns*/
 * {
     box-sizing: border-box;
 }
 
-/* Create two unequal columns that floats next to each other */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
 .column {
-    float: left;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-/* left column */
-.left {
-    font-size: 8vw;
-    width: 25%;
-    height: 70%;
-    color: #333;
-    padding-left: 20px;
-    font-family:'Kalam';
-    justify-content: center;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
 
-/* right column */
-.right {
-    width: 75%;
-    height:  100%;
-    font-family:'Kalam';
-    font-size: 3vw;
-    color: #dabece;
-    justify-content: center;
-}
-
-/* Clear floats after the columns */
-.row2:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.gallery {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.gallery-item {
-  margin: 20px;
-    position: relative;
-}
-
-
-.gallery-item .thumbnail {
-  border: 5px solid #fff;
-    width:300px;
-    height:200px;
-    border:5;
-}
-
-.centered {
-    font-size: 32px;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow:1px 1px 1px #000000;
-    color: lavenderblush;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-
-@media (max-width: 600px) {
-    .row, .navbar, .dropdown {
-        flex-direction: column;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-
-/* Responsive layout - when the screen is less than 600px wide, make the submenu the whole width of page */
-
-@media screen and (max-width: 600px) {
-  .dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #f9f9f9;
-    min-width: 600px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 
 </style>
 
@@ -163,47 +97,52 @@ h4 {
   <a href="#">About</a>
 </div>
 
+<p></p>
 
 <!-- Photo Grid -->
 <div class="row">
   <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/101%20college.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/Skating.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/UofT%20Gate.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/succulent1.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/george2.jpg?raw=true" style="width:100%">
   </div>
   <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
+      <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/bee.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/rainbow.jpg?raw=true" style="width:100%">
+
+      <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/bike.jpg?raw=true" style="width:100%">
+      <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/bun.jpg?raw=true" style="width:100%">
+      <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/dragon.jpg?raw=true" style="width:100%">
   </div>
   <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+   <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/fall%20tree.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/flula.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/george.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/succulent2.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/green%20flowers.jpg?raw=true" style="width:100%">
   </div>
   <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/hexagon.jpg?raw=true" style="width:100%">
+      <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/triangles.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/laser.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/locks.jpg?raw=true" style="width:100%">
+    <img src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/quilt.jpg?raw=true" style="width:100%">
   </div>
 </div>
 
+<p></p>
+
 </body>
 
+<nav>
+      <ul>
+        <li><a href="#">Ginger</a></li>
+        <li><a href="#">Cat</a></li>
+        <li><a href="#">Society</a></li>
+      </ul>
+</nav>
 
 </html>
 
