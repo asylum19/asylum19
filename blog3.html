@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<!font reference>
+<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+<style>
+
+/* background image */
+body {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+}
+
+/* text over main picture */
+.hero h2 {
+  font-size: 10vw;
+  margin: 0;
+  color: #fff;
+    padding-bottom: 4px
+}
+
+.hero h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 3vw;
+}
+
+/* Hello Font */
+h4 {
+	font-size: 7vw;
+    font-family: 'Lato' 'Palatino Linotype', sans-serif;
+  color: #333;
+    border-width: 0px;
+    padding-left: 15%;
+    margin: 15%;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* styling columns*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+}
+
+/* left column */
+.left {
+    font-size: 8vw;
+    width: 25%;
+    height: 70%;
+    color: #333;
+    padding-left: 20px;
+    font-family:'Kalam';
+    justify-content: center;
+}
+
+/* right column */
+.right {
+    width: 75%;
+    height:  100%;
+    font-family:'Kalam';
+    font-size: 3vw;
+    color: #dabece;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.gallery-item {
+  margin: 20px;
+}
+
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+    width:288px;
+    height:168px;
+    border:0;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .row, .navbar, .dropdown {
+        flex-direction: column;
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the submenu the whole width of page */
+
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+</style>
+
+<head>
+	<title>Title</title>
+    <meta charset="UTF-8">
+</head>
+
+<link rel="stylesheet"
+  type="text/css"
+  href="main.css"/>
+
+<body class="container">
+    <h1 class="col-sm-6">BE BOLD &#8226; BE PATIENT</h1>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="https://asylum19.github.io/">Home</a>
+  <a href="https://asylum19.github.io/blogmain.html">Blog</a>
+    <div class="dropdown">
+    <button class="dropbtn">Science
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+     <a href="https://asylum19.github.io/photos.html">Pics</a>
+  <a href="#">About</a>
+</div>
+
+<div>
+<h2> 100 Days </h2>
+    <h3> June 15 </h3>
+    </div>
+
+<img class="image" src="https://github.com/asylum19/asylum19.github.io/blob/master/Images/desk%20+%20pusheen.jpg?raw=true" style="width:35%">
+        <h3 class="blocktext">The view from my desk</h3>
+
+<p> Today was an odd day. In some ways the last couple of days were really productive. I might have actually finally hired a co-op for the fall, or at least figured out which one I want to hire. I also think I’ve made some really progress on the introductory chapter of my thesis. However, I’m still in my first year of my degree and I feel like I should have more pressing things that writing at this point. It’s been one year since I graduated from undergrad and it has also been 100 days since I last used the laser for any experiments.<br>
+<br>
+I am getting worried.  <br>
+<br>
+In some ways I cannot believe how different my life is than last year, but I also though I would have done more by this point. I always thought that grad school was going to be hard because there were too many fires to put out all at once and at some point this has been the case. I wasn’t prepared for having advocate for myself day after day just to be able to accomplish anything. Doubly worse is that it’s not just me but all our summer students are bored and I feel responsible. I keep telling myself that it’s not. <br>
+<br>
+It’s frustrating how long it’s taking the co-ops do to the few things they have to do, but I also understand wanting to spread out the work. There is some mental security in knowing you don’t constantly have to keep coming up with work to do and if you need to look busy or give weekly updates you will have something. Also the loss of urgency is very demotivated.<br>
+<br>
+It’s really hard when nothing works and how effort is not proportional to success. However, it does increase the chances. This is abstractly comforting but I would feel much better in I knew my committee would let me graduate even if I don’t get any experiments done. I don’t have the luxury of time to say an extra year to wait for the laser to be fixed and I’m not even sure if there is money in the budget to pay me any longer. I hope graduate school is largely a measure of effort and not success. <br>
+<br>
+I guess I should continue following the advice I gave myself as excuse not to any standardized test this summer - stop investing in plan B, if you are working on your backup you aren’t focusing on plan A. Putting it out there, this is terrible advice in many situations, but I think it works here.<br>
+<br>
+This is not to say I just must accept my fate. I have to keep forming self imposed and arbitrary deadlines to keep me motivated I guess. I hope I to finish gathering all the literature for chapter one of the thesis and start forming actual coherent paragraphs. I’m also going to ask for someone to buy me a two hundred thousand dollar laser for me on Monday (like actually, I’m going to do this).<br>
+<br>
+Also I know I’ve been bad again this week about writing but also every time I breath the website breaks in new and unexpected ways. I want to think I’m still on the ramp up. </p>
+
+</body>
+
+
+    <nav>
+      <ul>
+        <li><a href="#">Ginger</a></li>
+        <li><a href="#">Cat</a></li>
+        <li><a href="#">Society</a></li>
+      </ul>
+    </nav>
+
+</body>
+
+
+</html>
+
+
+
+
+
